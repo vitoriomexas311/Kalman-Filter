@@ -31,7 +31,7 @@ measurement_noise = 0.1
 kf = KalmanFilter(initial_state, initial_covariance, process_noise, measurement_noise)
 
 # Generate some noisy measurements
-np.random.seed(2)
+np.random.seed(50)
 true_value = 2.0
 measurements = true_value + np.random.normal(0, np.sqrt(measurement_noise), 100)
 
